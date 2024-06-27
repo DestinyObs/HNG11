@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <title>Destiny Obs</title>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="spinner"></div>
+</div>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Des</span>tiny <span>O</span>bs</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">HNG11 Task 0</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Destiny <span></span></h1>
+        <a href="https://hng.tech/" type="button" class="cta">HNG11 Internship</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img id="about-img" src="./img/img-2.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>DevOps Engineer | Software Engineer</h2>
+        <p>I am Obueh Destiny, a dedicated DevOps Engineer with a strong foundation in software engineering, particularly in ASP.NET development. Currently, I am pursuing my education at Landmark University, set to graduate in 2024.
+
+          My journey in technology has equipped me with extensive knowledge in frontend development, graphic design, and motion graphics, adding a versatile edge to my professional skill set.
+          
+          Beyond my professional pursuits, I am a devoted Christian and strive to embody Christ's values in all aspects of my life.
+          
+          Driven by a passion for innovation and a relentless pursuit of excellence, I am dedicated to delivering impactful solutions that meet the highest standards of quality and functionality. My current focus on DevOps allows me to bridge the gap between development and operations, ensuring seamless integration, continuous delivery, and efficient infrastructure management.
+          
+          With a robust background in both DevOps and software engineering, I am committed to enhancing system reliability, optimizing performance, and fostering collaboration to achieve technological excellence.
+        </p> <a href="https://drive.google.com/file/d/12Co_phqhZqpz7sIDVQaj-0bsIYyDJJ91" class="cta">Download Resume</a>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="img/undraw_contact_us_re_4qqt.svg" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+234 904 240 1678</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="img/undraw_mail_re_duel.svg" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>destinyobueh14@gmail.com</h2>
+            <h2>obueh.destiny@lmu.edu.ng</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="img/undraw_my_location_re_r52x.svg" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>New London Estate, Lagos, Nigeria</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>D</span>estiny <span>O</span>bs</h1>
+      </div>
+      <br>
+      <div class="footer__social">
+        <a href="https://facebook.com/d.t.w_Destiny_Obs/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/DestinyObs/"><i class="fa fa-twitter"></i></a>
+        <a href="www.linkedin.com/in/destinyobs"><i class="fa fa-linkedin"></i></a>
+        <a href="https://instagram.com/d.t.w_Destiny_Obs/"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/DestinyObs"><i class="fa fa-github"></i></a>
+    </div>
+                    <p> &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Destiny Obs  <i class="fa fa-heart" aria-hidden="true"></i> | HNG 11 </p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="https://kit.fontawesome.com/7365f0405c.js" crossorigin="anonymous"></script>
+  <script>
+      // JavaScript for Changing Image
+      var images = ["img-2.png", "img-3.jpg", "img-4.jpg", "img-5.jpg", "img-6.jpg", "new.jpg", "new2.jpg", "DSC_0745.jpg", "DSC_0746.jpg", "DSC_0747", "DSC_0755.jpg"]; // Add more image file names as needed
+    var currentIndex = 0;
+    var imgElement = document.getElementById("about-img");
+
+    function changeImage() {
+        imgElement.src = "./img/" + images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length;
+        setTimeout(changeImage, 7000);
+    }
+
+    // Start the image slideshow
+    changeImage();
+  </script>
+</body>
+
+</html>
